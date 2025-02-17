@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "animate.css";
+
+body {
+  background-color: rgb(250, 250, 247);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-brand {
+  svg {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.bg-light {
+  .navbar-brand {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.features-container {
+  .card {
+    border-radius: 30px;
+  }
+}
+
+.feature-card {
+  background-color: #f3f3f1;
+  border-radius: 30px;
+
+  .card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    svg {
+      fill: t;
+    }
+  }
+
+  .card-text {
+    font-size: 1rem;
+    line-height: 2;
+    color: #666;
+  }
+}
+
+.steps-container {
+  .step-card {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 31px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 20px 0px;
+    opacity: 1;
+    padding: 5px;
+
+    .card-body {
+      border: 1px solid rgb(243, 243, 241);
+      border-radius: 28px;
+      background: linear-gradient(
+        rgb(255, 255, 255) 50%,
+        rgb(246, 244, 242) 100%
+      );
+    }
+
+    .muted {
+      color: #999;
+    }
+
+    .card-title {
+      text-align: left;
+      font-weight: 600;
+      font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    }
+
+    .card-text {
+      text-align: left;
+      font-size: 1.25rem;
+      color: #666;
+    }
+  }
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 3rem;
+}

@@ -5,7 +5,7 @@ import { ReactComponent as OrgManagementIcon } from "../assets/settings.svg";
 
 export default function AdvancedFeatures() {
   return (
-    <Container className="py-5 steps-container">
+    <Container id="solutions" className="py-5 steps-container ">
       <div className="d-flex justify-content-center flex-column align-items-center gap-3 mb-3">
         <Badge
           pill

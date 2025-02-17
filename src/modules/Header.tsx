@@ -48,19 +48,19 @@ export const Header = () => {
         <NavbarToggle onClick={handleToggle} />
         <NavbarCollapse className="me-5">
           <Nav className="ms-auto">
-            <Nav.Link href="/home" className="mx-lg-3 mx-md-2 mx-sm-1">
+            <Nav.Link href="#home" className="mx-lg-3 mx-md-2 mx-sm-1">
               Home
             </Nav.Link>
-            <Nav.Link href="/about" className="mx-lg-3 mx-md-2 mx-sm-1">
+            <Nav.Link href="#features" className="mx-lg-3 mx-md-2 mx-sm-1">
               Features
             </Nav.Link>
-            <Nav.Link href="/solutions" className="mx-lg-3 mx-md-2 mx-sm-1">
+            <Nav.Link href="#solutions" className="mx-lg-3 mx-md-2 mx-sm-1">
               Solutions
             </Nav.Link>
-            <Nav.Link href="/start" className="mx-lg-3 mx-md-2 mx-sm-1">
+            <Nav.Link href="#start" className="mx-lg-3 mx-md-2 mx-sm-1">
               How to Start
             </Nav.Link>
-            <Nav.Link href="/contact" className="mx-lg-3 mx-md-2 mx-sm-1">
+            <Nav.Link href="#contact" className="mx-lg-3 mx-md-2 mx-sm-1">
               Contact
             </Nav.Link>
           </Nav>

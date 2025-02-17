@@ -4,10 +4,15 @@ import { ReactComponent as API } from "../assets/api.svg";
 import { ReactComponent as Magic } from "../assets/magic.svg";
 import { ReactComponent as OAuth } from "../assets/oauth.svg";
 import { ReactComponent as Security } from "../assets/security.svg";
-import MFA from "../assets/MFA.jpg";
+import MFA from "../assets/mfa1.svg";
+import oauth from "../assets/oauth1.svg";
+import AI from "../assets/ai_card.svg";
+import Custom from "../assets/custom_card.svg";
+import OpenAPI from "../assets/openapi.svg";
+
 export const Features = () => {
   return (
-    <Container className="py-5 mt-5 features-container">
+    <Container id="features" className="py-5 mt-5 features-container">
       <Badge pill bg="light" text="dark" className="mb-3 px-3 py-2 shadow-sm">
         ✨ Features
       </Badge>
@@ -36,8 +41,8 @@ export const Features = () => {
               <Card.Img
                 variant="bottom"
                 className="img-fluid mt-auto"
-                style={{ maxHeight: "200px", objectFit: "contain" }}
-                src="https://framerusercontent.com/images/xJ3fjboUJLVolfGqf752ILN4.png"
+                style={{ maxHeight: "180px", objectFit: "contain" }}
+                src={MFA}
               />
             </Card.Body>
           </Card>
@@ -59,7 +64,7 @@ export const Features = () => {
                 variant="bottom"
                 className="img-fluid mt-auto"
                 style={{ maxHeight: "200px", objectFit: "contain" }}
-                src="https://framerusercontent.com/images/A7cCrglKezIsVIm88768rZVcFJo.png"
+                src={oauth}
               />
             </Card.Body>
           </Card>
@@ -81,7 +86,7 @@ export const Features = () => {
                 variant="bottom"
                 className="img-fluid mt-auto"
                 style={{ maxHeight: "200px", objectFit: "contain" }}
-                src="https://framerusercontent.com/images/jrY5DWrX2645mgGTeVIjpXjVIU.png"
+                src={AI}
               />
             </Card.Body>
           </Card>
@@ -107,7 +112,7 @@ export const Features = () => {
                 variant="bottom"
                 className="img-fluid mt-auto"
                 style={{ maxHeight: "200px", objectFit: "contain" }}
-                src="https://framerusercontent.com/images/xJ3fjboUJLVolfGqf752ILN4.png"
+                src={Custom}
               />
             </Card.Body>
           </Card>
@@ -129,7 +134,7 @@ export const Features = () => {
                 variant="bottom"
                 className="img-fluid mt-auto"
                 style={{ maxHeight: "200px", objectFit: "contain" }}
-                src="https://framerusercontent.com/images/A7cCrglKezIsVIm88768rZVcFJo.png"
+                src={OpenAPI}
               />
             </Card.Body>
           </Card>

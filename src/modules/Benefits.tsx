@@ -8,7 +8,7 @@ import { ReactComponent as SecurityIcon } from "../assets/security.svg";
 
 export const Benefits = () => {
   return (
-    <Container className="py-5">
+    <Container id="usecase" className="py-5">
       <Row className="align-items-start">
         <Col
           md={6}

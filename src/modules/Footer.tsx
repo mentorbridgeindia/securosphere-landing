@@ -53,16 +53,16 @@ export const Footer = () => {
           <Col lg={2} md={6} className="mb-4">
             <h6 className="mb-3">Product</h6>
             <Nav className="flex-column">
-              <Nav.Link href="#" className="footer-link">
+              <Nav.Link href="#features" className="footer-link">
                 Features
               </Nav.Link>
-              <Nav.Link href="#" className="footer-link">
+              <Nav.Link href="#usecase" className="footer-link">
                 Use Cases
               </Nav.Link>
-              <Nav.Link href="#" className="footer-link">
+              <Nav.Link href="#solutions" className="footer-link">
                 Solutions
               </Nav.Link>
-              <Nav.Link href="#" className="footer-link">
+              <Nav.Link href="#api" className="footer-link">
                 API
               </Nav.Link>
             </Nav>
@@ -70,16 +70,10 @@ export const Footer = () => {
           <Col lg={2} md={6} className="mb-4">
             <h6 className="mb-3">Company</h6>
             <Nav className="flex-column">
-              <Nav.Link href="#" className="footer-link">
+              <Nav.Link href="#about" className="footer-link">
                 About
               </Nav.Link>
-              <Nav.Link href="#" className="footer-link">
-                Blog
-              </Nav.Link>
-              <Nav.Link href="#" className="footer-link">
-                Careers
-              </Nav.Link>
-              <Nav.Link href="#" className="footer-link">
+              <Nav.Link href="#contact" className="footer-link">
                 Contact
               </Nav.Link>
             </Nav>

@@ -3,7 +3,7 @@ import { Badge, Col, Container, Row } from "react-bootstrap";
 export const Components = () => {
   return (
     <div>
-      <Container className="mt-5 features-container">
+      <Container className="py-5 mt-5 features-container">
         <Row className="mt-5">
           <Col>
             <Badge

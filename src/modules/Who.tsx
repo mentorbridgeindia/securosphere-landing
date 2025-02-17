@@ -2,7 +2,7 @@ import { Badge, Card, Col, Container, Row } from "react-bootstrap";
 import { ReactComponent as Api } from "../assets/api.svg";
 export const Who = () => {
   return (
-    <Container className="mt-5">
+    <Container className="py-5 mt-5">
       <Row className="align-items-start">
         <Col
           md={6}

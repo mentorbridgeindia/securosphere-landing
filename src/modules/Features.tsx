@@ -6,7 +6,7 @@ import { ReactComponent as OAuth } from "../assets/oauth.svg";
 import { ReactComponent as Security } from "../assets/security.svg";
 export const Features = () => {
   return (
-    <Container className="mt-5 features-container">
+    <Container className="py-5 mt-5 features-container">
       <Badge pill bg="light" text="dark" className="mb-3 px-3 py-2 shadow-sm">
         ✨ Features
       </Badge>

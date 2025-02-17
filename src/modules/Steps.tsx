@@ -15,7 +15,7 @@ export const Steps = () => {
         </Badge>
       </div>
       <h1 className="text-center mt-3 mb-4">Simple Steps to Get Started</h1>
-      <p className="text-muted mb-5">
+      <p className="text-muted mb-5 lead">
         Follow these simple steps to get started with our platform.
       </p>
       <Row className="mt-4">

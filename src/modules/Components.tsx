@@ -7,7 +7,7 @@ import auth from "../assets/Auth.jpg";
 export const Components = () => {
   return (
     <div>
-      <Container className="mt-5 features-container">
+      <Container className="py-5 mt-5 features-container">
         <Row className="mt-5">
           <Col md={6} xs={12}>
             <Badge

@@ -36,8 +36,9 @@ export const Header = () => {
       variant="light"
       style={{
         width: "100%",
-        borderRadius: navbarBg === "transparent" ? "50px" : "50px",
+        borderRadius: navbarBg === "transparent" ? "50px" : "0",
         transition: "all 0.3s ease",
+        zIndex: 1030,
       }}
     >
       <Container fluid>
@@ -47,15 +48,33 @@ export const Header = () => {
         <NavbarToggle onClick={handleToggle} />
         <NavbarCollapse className="me-5">
           <Nav className="ms-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/about">Features</Nav.Link>
-            <Nav.Link href="/solutions">Solutions</Nav.Link>
-            <Nav.Link href="/start">How to Start</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/home" className="mx-lg-3 mx-md-2 mx-sm-1">
+              Home
+            </Nav.Link>
+            <Nav.Link href="/about" className="mx-lg-3 mx-md-2 mx-sm-1">
+              Features
+            </Nav.Link>
+            <Nav.Link href="/solutions" className="mx-lg-3 mx-md-2 mx-sm-1">
+              Solutions
+            </Nav.Link>
+            <Nav.Link href="/start" className="mx-lg-3 mx-md-2 mx-sm-1">
+              How to Start
+            </Nav.Link>
+            <Nav.Link href="/contact" className="mx-lg-3 mx-md-2 mx-sm-1">
+              Contact
+            </Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-            <Nav.Link href="https://app.securosphere.in/login">Login</Nav.Link>
-            <Nav.Link href="https://app.securosphere.in/register">
+            <Nav.Link
+              href="https://app.securosphere.in/login"
+              className="mx-lg-3 mx-md-2 mx-sm-1"
+            >
+              Login
+            </Nav.Link>
+            <Nav.Link
+              href="https://app.securosphere.in/register"
+              className="mx-lg-3 mx-md-2 mx-sm-1"
+            >
               Register
             </Nav.Link>
           </Nav>

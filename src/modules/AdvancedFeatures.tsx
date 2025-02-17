@@ -1,5 +1,7 @@
 import { Badge, Card, Col, Container, Row } from "react-bootstrap";
-import { ReactComponent as OAuth } from "../assets/oauth.svg";
+import { ReactComponent as CustomRolesIcon } from "../assets/roles.svg";
+import { ReactComponent as MemberInvitationsIcon } from "../assets/members.svg";
+import { ReactComponent as OrgManagementIcon } from "../assets/settings.svg";
 
 export default function AdvancedFeatures() {
   return (
@@ -25,13 +27,13 @@ export default function AdvancedFeatures() {
       <Row className="gy-4">
         <Col xs={12} sm={6} md={4}>
           <Card className="step-card h-100">
-            <Card.Body className="text-center p-2 d-flex flex-column align-items-center gap-2 justify-content-center">
+            <Card.Body className="text-center p-3 d-flex flex-column align-items-center gap-2 justify-content-center">
               <Badge bg="light" text="dark" className="rounded-5 mt-3 fs-4">
-                <OAuth />
+                <CustomRolesIcon style={{ width: "20px", height: "20px" }} />
               </Badge>
-              <div className="d-flex flex-column align-items-center gap-3 px-5 mb-5">
-                <Card.Title className="mt-5 fs-3">Custom Roles</Card.Title>
-                <Card.Text className="text-center">
+              <div className="d-flex flex-column align-items-center gap-3 px-4 mb-4">
+                <Card.Title className="mt-4 fs-5">Custom Roles</Card.Title>
+                <Card.Text className="text-center fs-6">
                   Customizable roles and permissions to fit your organization's
                   needs.
                 </Card.Text>
@@ -41,15 +43,17 @@ export default function AdvancedFeatures() {
         </Col>
         <Col xs={12} sm={6} md={4}>
           <Card className="step-card h-100">
-            <Card.Body className="text-center p-2 d-flex flex-column align-items-center gap-2 justify-content-center">
+            <Card.Body className="text-center p-3 d-flex flex-column align-items-center gap-2 justify-content-center">
               <Badge bg="light" text="dark" className="rounded-5 mt-3 fs-4">
-                <OAuth />
+                <MemberInvitationsIcon
+                  style={{ width: "20px", height: "20px" }}
+                />
               </Badge>
-              <div className="d-flex flex-column align-items-center gap-3 px-5">
-                <Card.Title className="mt-5 fs-3">
+              <div className="d-flex flex-column align-items-center gap-3 px-4">
+                <Card.Title className="mt-4 fs-5">
                   Member Invitations
                 </Card.Title>
-                <Card.Text className="text-center">
+                <Card.Text className="text-center fs-6">
                   Invite members to your organization and manage their
                   permissions simply.
                 </Card.Text>
@@ -59,13 +63,13 @@ export default function AdvancedFeatures() {
         </Col>
         <Col xs={12} sm={6} md={4}>
           <Card className="step-card h-100">
-            <Card.Body className="text-center p-2 d-flex flex-column align-items-center gap-2 justify-content-center">
+            <Card.Body className="text-center p-3 d-flex flex-column align-items-center gap-2 justify-content-center">
               <Badge bg="light" text="dark" className="rounded-5 mt-3 fs-4">
-                <OAuth />
+                <OrgManagementIcon style={{ width: "20px", height: "20px" }} />
               </Badge>
-              <div className="d-flex flex-column align-items-center gap-3 px-5 mb-5">
-                <Card.Title className="mt-5 fs-3">Org Management</Card.Title>
-                <Card.Text className="text-center">
+              <div className="d-flex flex-column align-items-center gap-3 px-4 mb-4">
+                <Card.Title className="mt-4 fs-5">Org Management</Card.Title>
+                <Card.Text className="text-center fs-6">
                   Manage your organization's settings and members through a
                   powerful dashboard.
                 </Card.Text>

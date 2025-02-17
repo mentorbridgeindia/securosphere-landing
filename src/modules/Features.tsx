@@ -4,6 +4,7 @@ import { ReactComponent as Edit } from "../assets/edit.svg";
 import { ReactComponent as Magic } from "../assets/magic.svg";
 import { ReactComponent as OAuth } from "../assets/oauth.svg";
 import { ReactComponent as Security } from "../assets/security.svg";
+
 export const Features = () => {
   return (
     <Container className="mt-5 features-container">
@@ -19,7 +20,7 @@ export const Features = () => {
         scalable solutions designed to grow with you.
       </p>
       <Row className="mt-5">
-        <Col>
+        <Col md={4} xs={12} className="mb-4">
           <Card>
             <Card.Body className="feature-card">
               <Card.Title>
@@ -33,15 +34,14 @@ export const Features = () => {
                 right people get in.
               </Card.Text>
               <Card.Img
-                style={{ height: "250px" }}
-                src={
-                  "https://framerusercontent.com/images/xJ3fjboUJLVolfGqf752ILN4.png"
-                }
+                variant="bottom"
+                className="img-fluid"
+                src="https://framerusercontent.com/images/xJ3fjboUJLVolfGqf752ILN4.png"
               />
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col md={4} xs={12} className="mb-4">
           <Card>
             <Card.Body className="feature-card">
               <Card.Title>
@@ -55,15 +55,14 @@ export const Features = () => {
                 platform.
               </Card.Text>
               <Card.Img
-                style={{ height: "250px" }}
-                src={
-                  "https://framerusercontent.com/images/A7cCrglKezIsVIm88768rZVcFJo.png"
-                }
+                variant="bottom"
+                className="img-fluid"
+                src="https://framerusercontent.com/images/A7cCrglKezIsVIm88768rZVcFJo.png"
               />
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col md={4} xs={12} className="mb-2">
           <Card>
             <Card.Body className="feature-card">
               <Card.Title>
@@ -73,21 +72,20 @@ export const Features = () => {
                 </Badge>
               </Card.Title>
               <Card.Text>
-                With AI, we analyze your user's behavior to keep you app safe
+                With AI, we analyze your user's behavior to keep your app safe
                 and secure.
               </Card.Text>
               <Card.Img
-                style={{ height: "250px" }}
-                src={
-                  "https://framerusercontent.com/images/jrY5DWrX2645mgGTeVIjpXjVIU.png"
-                }
+                variant="bottom"
+                className="img-fluid"
+                src="https://framerusercontent.com/images/jrY5DWrX2645mgGTeVIjpXjVIU.png"
               />
             </Card.Body>
           </Card>
         </Col>
       </Row>
-      <Row className="mt-5">
-        <Col>
+      <Row className="mt-3">
+        <Col md={6} xs={12} className="mb-4">
           <Card>
             <Card.Body className="feature-card">
               <Card.Title>
@@ -101,15 +99,14 @@ export const Features = () => {
                 email server.
               </Card.Text>
               <Card.Img
-                style={{ height: "350px" }}
-                src={
-                  "https://framerusercontent.com/images/xJ3fjboUJLVolfGqf752ILN4.png"
-                }
+                variant="bottom"
+                className="img-fluid"
+                src="https://framerusercontent.com/images/xJ3fjboUJLVolfGqf752ILN4.png"
               />
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col md={6} xs={12} className="mb-4">
           <Card>
             <Card.Body className="feature-card">
               <Card.Title>
@@ -123,10 +120,9 @@ export const Features = () => {
                 services.
               </Card.Text>
               <Card.Img
-                style={{ height: "350px" }}
-                src={
-                  "https://framerusercontent.com/images/A7cCrglKezIsVIm88768rZVcFJo.png"
-                }
+                variant="bottom"
+                className="img-fluid"
+                src="https://framerusercontent.com/images/A7cCrglKezIsVIm88768rZVcFJo.png"
               />
             </Card.Body>
           </Card>

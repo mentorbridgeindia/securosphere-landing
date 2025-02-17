@@ -20,29 +20,28 @@ export const Header = () => {
     <Navbar
       expand="lg"
       fixed="top"
-      className={`${navbarBg} mx-auto mt-2`}
+      className={`${navbarBg} mx-auto `}
       variant="light"
       style={{
-        width: navbarBg === "transparent" ? "70%" : "70%",
-        borderRadius: "50px",
+        width: navbarBg === "transparent" ? "100%" : "100%",
+        borderRadius: navbarBg === "transparent" ? "50px" : "50px",
+        transition: "all 0.3s ease",
       }}
     >
-      <Container>
-        <Navbar.Brand className="ms-5 me-5" href="#">
+      <Container fluid>
+        <Navbar.Brand className="ms-1 me-5" href="/">
           <Logo /> SecuroSphere
         </Navbar.Brand>
         <Navbar.Toggle />
-        <Navbar.Collapse className="ms-5">
-          <Nav>
+        <Navbar.Collapse className="me-5">
+          <Nav className="ms-auto">
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/about">Features</Nav.Link>
-            <Nav.Link href="/about">Solutions</Nav.Link>
-            <Nav.Link href="/about">How to Start</Nav.Link>
+            <Nav.Link href="/solutions">Solutions</Nav.Link>
+            <Nav.Link href="/start">How to Start</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
-        </Navbar.Collapse>
-        <Navbar.Collapse className="ms-auto ">
-          <Nav>
+          <Nav className="ms-auto">
             <Nav.Link href="https://app.securosphere.in/login">Login</Nav.Link>
             <Nav.Link href="https://app.securosphere.in/register">
               Register

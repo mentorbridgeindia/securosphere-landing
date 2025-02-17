@@ -50,7 +50,7 @@ export const Steps = () => {
                 </div>
                 <Card.Title className="fw-bold mb-2">Configure</Card.Title>
                 <Card.Text>
-                  Configure your settings & authentication methods.
+                  Configure your Organization settings & authentication methods.
                 </Card.Text>
               </div>
             </Card.Body>

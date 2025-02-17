@@ -23,7 +23,7 @@ export const Header = () => {
       className={`${navbarBg} mx-auto mt-2`}
       variant="light"
       style={{
-        width: navbarBg === "transparent" ? "70%" : "70%",
+        width: "70%",
         borderRadius: "50px",
       }}
     >

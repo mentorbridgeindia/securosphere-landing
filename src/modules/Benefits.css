@@ -1,0 +1,46 @@
+.side-line {
+  flex: none;
+  height: 100px;
+  left: 0;
+  overflow: visible;
+  /* position: absolute; */
+  top: 0;
+  width: 4px;
+  z-index: 1;
+  opacity: 1;
+
+  .glow {
+    height: 40px;
+    left: 0;
+    overflow: visible;
+    /* position: absolute; */
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(254, 106, 46);
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .shade {
+    bottom: -5px;
+    flex: none;
+    height: 48px;
+    left: 0;
+    overflow: hidden;
+    /* position: absolute; */
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgb(254, 106, 46) 0%,
+      rgba(171, 171, 171, 0.07) 100%
+    );
+    opacity: 0.5;
+  }
+}
+
+
+.align-left{
+  text-align: left;
+}

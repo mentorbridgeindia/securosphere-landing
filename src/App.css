@@ -4,6 +4,7 @@
 
 body {
   background-color: rgb(250, 250, 247);
+  font-family: "Urbanist", "Urbanist Placeholder", sans-serif !important;
 }
 
 .App {
@@ -118,8 +119,8 @@ body {
 
     .card-text {
       text-align: left;
-      font-size: 1.25rem;
-      color: #666;
+      font-size: 1.15rem;
+      color: #555;
     }
   }
 }
@@ -127,4 +128,8 @@ body {
 .section-title {
   font-weight: 600;
   font-size: 3rem;
+}
+
+h1 {
+  font-size: 3.5rem !important;
 }

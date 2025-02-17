@@ -1,9 +1,17 @@
 import { useEffect, useState } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import {
+  Container,
+  Nav,
+  Navbar,
+  NavbarToggle,
+  NavbarCollapse,
+} from "react-bootstrap";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 
 export const Header = () => {
   const [navbarBg, setNavbarBg] = useState("transparent");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -16,14 +24,18 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <Navbar
       expand="lg"
       fixed="top"
-      className={`${navbarBg} mx-auto `}
+      className={`${navbarBg} mx-auto ${isDropdownOpen ? "bg-light" : ""}`}
       variant="light"
       style={{
-        width: navbarBg === "transparent" ? "100%" : "100%",
+        width: "100%",
         borderRadius: navbarBg === "transparent" ? "50px" : "50px",
         transition: "all 0.3s ease",
       }}
@@ -32,8 +44,8 @@ export const Header = () => {
         <Navbar.Brand className="ms-1 me-5" href="/">
           <Logo /> SecuroSphere
         </Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="me-5">
+        <NavbarToggle onClick={handleToggle} />
+        <NavbarCollapse className="me-5">
           <Nav className="ms-auto">
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/about">Features</Nav.Link>
@@ -47,7 +59,7 @@ export const Header = () => {
               Register
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
+        </NavbarCollapse>
       </Container>
     </Navbar>
   );

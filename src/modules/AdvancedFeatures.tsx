@@ -1,5 +1,6 @@
 import { Badge, Card, Col, Container, Row } from "react-bootstrap";
 import { ReactComponent as OAuth } from "../assets/oauth.svg";
+
 export default function AdvancedFeatures() {
   return (
     <Container className="py-5 steps-container">
@@ -21,9 +22,9 @@ export default function AdvancedFeatures() {
           organization. and streamlined processes.
         </p>
       </div>
-      <Row>
-        <Col>
-          <Card className="step-card">
+      <Row className="gy-4">
+        <Col xs={12} sm={6} md={4}>
+          <Card className="step-card h-100">
             <Card.Body className="text-center p-2 d-flex flex-column align-items-center gap-2 justify-content-center">
               <Badge bg="light" text="dark" className="rounded-5 mt-3 fs-4">
                 <OAuth />
@@ -38,13 +39,13 @@ export default function AdvancedFeatures() {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card className="step-card">
+        <Col xs={12} sm={6} md={4}>
+          <Card className="step-card h-100">
             <Card.Body className="text-center p-2 d-flex flex-column align-items-center gap-2 justify-content-center">
               <Badge bg="light" text="dark" className="rounded-5 mt-3 fs-4">
                 <OAuth />
               </Badge>
-              <div className="d-flex flex-column align-items-center gap-3 px-5 mb-5">
+              <div className="d-flex flex-column align-items-center gap-3 px-5">
                 <Card.Title className="mt-5 fs-3">
                   Member Invitations
                 </Card.Title>
@@ -56,8 +57,8 @@ export default function AdvancedFeatures() {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card className="step-card">
+        <Col xs={12} sm={6} md={4}>
+          <Card className="step-card h-100">
             <Card.Body className="text-center p-2 d-flex flex-column align-items-center gap-2 justify-content-center">
               <Badge bg="light" text="dark" className="rounded-5 mt-3 fs-4">
                 <OAuth />

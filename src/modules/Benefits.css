@@ -1,46 +1,55 @@
+.align-left {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .sticky {
+    position: static !important;
+  }
+  .side-line {
+    display: none;
+  }
+}
+:root {
+  --theme-color: #002851;
+}
+
 .side-line {
   flex: none;
   height: 100px;
   left: 0;
   overflow: visible;
-  /* position: absolute; */
+  position: relative;
   top: 0;
   width: 4px;
   z-index: 1;
   opacity: 1;
-
-  .glow {
-    height: 40px;
-    left: 0;
-    overflow: visible;
-    /* position: absolute; */
-    right: 0;
-    top: 0;
-    z-index: 1;
-    background-color: rgb(254, 106, 46);
-    border-radius: 2px;
-    opacity: 1;
-  }
-
-  .shade {
-    bottom: -5px;
-    flex: none;
-    height: 48px;
-    left: 0;
-    overflow: hidden;
-    /* position: absolute; */
-    right: 0;
-    z-index: 1;
-    background: linear-gradient(
-      180deg,
-      rgb(254, 106, 46) 0%,
-      rgba(171, 171, 171, 0.07) 100%
-    );
-    opacity: 0.5;
-  }
 }
 
+.glow {
+  height: 40px;
+  left: 0;
+  overflow: visible;
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: var(--theme-color);
+  border-radius: 2px;
+  opacity: 1;
+}
 
-.align-left{
-  text-align: left;
+.shade {
+  bottom: -5px;
+  flex: none;
+  height: 48px;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  z-index: 1;
+  background: linear-gradient(180deg,
+      var(--theme-color) 0%,
+      rgba(171, 171, 171, 0.07) 100%);
+  opacity: 0.5;
 }

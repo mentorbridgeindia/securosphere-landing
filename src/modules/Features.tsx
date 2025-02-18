@@ -1,12 +1,18 @@
 import { Badge, Card, Col, Container, Row } from "react-bootstrap";
+import { ReactComponent as OrgManagementIcon } from "../assets/settings.svg";
 import { ReactComponent as API } from "../assets/api.svg";
-import { ReactComponent as Edit } from "../assets/edit.svg";
 import { ReactComponent as Magic } from "../assets/magic.svg";
 import { ReactComponent as OAuth } from "../assets/oauth.svg";
 import { ReactComponent as Security } from "../assets/security.svg";
+import MFA from "../assets/mfa1.svg";
+import oauth from "../assets/oauth1.svg";
+import AI from "../assets/ai_card.svg";
+import Custom from "../assets/custom_card.svg";
+import OpenAPI from "../assets/openapi.svg";
+
 export const Features = () => {
   return (
-    <Container className="py-5 mt-5 features-container">
+    <Container id="features" className="py-5 mt-5 features-container">
       <Badge pill bg="light" text="dark" className="mb-3 px-3 py-2 shadow-sm">
         ✨ Features
       </Badge>
@@ -19,9 +25,9 @@ export const Features = () => {
         scalable solutions designed to grow with you.
       </p>
       <Row className="mt-5">
-        <Col>
-          <Card>
-            <Card.Body className="feature-card">
+        <Col md={4} xs={12} className="mb-4">
+          <Card className="feature-card h-100">
+            <Card.Body className="feature-card  d-flex flex-column">
               <Card.Title>
                 Multi-Factor
                 <Badge bg="light" text="dark" className="ms-2 rounded-5">
@@ -33,17 +39,17 @@ export const Features = () => {
                 right people get in.
               </Card.Text>
               <Card.Img
-                style={{ height: "250px" }}
-                src={
-                  "https://framerusercontent.com/images/xJ3fjboUJLVolfGqf752ILN4.png"
-                }
+                variant="bottom"
+                className="img-fluid mt-auto"
+                style={{ maxHeight: "180px", objectFit: "contain" }}
+                src={MFA}
               />
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card>
-            <Card.Body className="feature-card">
+        <Col md={4} xs={12} className="mb-4">
+          <Card className="h-100">
+            <Card.Body className="feature-card  d-flex flex-column">
               <Card.Title>
                 OAuth 2.0
                 <Badge bg="light" text="dark" className="ms-2 rounded-5">
@@ -55,17 +61,17 @@ export const Features = () => {
                 platform.
               </Card.Text>
               <Card.Img
-                style={{ height: "250px" }}
-                src={
-                  "https://framerusercontent.com/images/A7cCrglKezIsVIm88768rZVcFJo.png"
-                }
+                variant="bottom"
+                className="img-fluid mt-auto"
+                style={{ maxHeight: "200px", objectFit: "contain" }}
+                src={oauth}
               />
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card>
-            <Card.Body className="feature-card">
+        <Col md={4} xs={12} className="mb-4">
+          <Card className="h-100">
+            <Card.Body className="feature-card  d-flex flex-column">
               <Card.Title>
                 AI Behavioral Analysis
                 <Badge bg="light" text="dark" className="ms-2 rounded-5">
@@ -73,27 +79,29 @@ export const Features = () => {
                 </Badge>
               </Card.Title>
               <Card.Text>
-                With AI, we analyze your user's behavior to keep you app safe
+                With AI, we analyze your user's behavior to keep your app safe
                 and secure.
               </Card.Text>
               <Card.Img
-                style={{ height: "250px" }}
-                src={
-                  "https://framerusercontent.com/images/jrY5DWrX2645mgGTeVIjpXjVIU.png"
-                }
+                variant="bottom"
+                className="img-fluid mt-auto"
+                style={{ maxHeight: "200px", objectFit: "contain" }}
+                src={AI}
               />
             </Card.Body>
           </Card>
         </Col>
       </Row>
-      <Row className="mt-5">
-        <Col>
-          <Card>
-            <Card.Body className="feature-card">
+      <Row className="mt-3 justify-content-center">
+        <Col md={4} xs={12} className="mb-4">
+          <Card className="h-100">
+            <Card.Body className="feature-card  d-flex flex-column">
               <Card.Title>
                 Customize Everything
                 <Badge bg="light" text="dark" className="ms-2 rounded-5">
-                  <Edit />
+                  <OrgManagementIcon
+                    style={{ width: "20px", height: "20px" }}
+                  />
                 </Badge>
               </Card.Title>
               <Card.Text>
@@ -101,17 +109,17 @@ export const Features = () => {
                 email server.
               </Card.Text>
               <Card.Img
-                style={{ height: "350px" }}
-                src={
-                  "https://framerusercontent.com/images/xJ3fjboUJLVolfGqf752ILN4.png"
-                }
+                variant="bottom"
+                className="img-fluid mt-auto"
+                style={{ maxHeight: "200px", objectFit: "contain" }}
+                src={Custom}
               />
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card>
-            <Card.Body className="feature-card">
+        <Col md={4} xs={12} className="mb-4">
+          <Card className="h-100">
+            <Card.Body className="feature-card  d-flex flex-column">
               <Card.Title>
                 Open API's
                 <Badge bg="light" text="dark" className="ms-2 rounded-5">
@@ -123,10 +131,10 @@ export const Features = () => {
                 services.
               </Card.Text>
               <Card.Img
-                style={{ height: "350px" }}
-                src={
-                  "https://framerusercontent.com/images/A7cCrglKezIsVIm88768rZVcFJo.png"
-                }
+                variant="bottom"
+                className="img-fluid mt-auto"
+                style={{ maxHeight: "200px", objectFit: "contain" }}
+                src={OpenAPI}
               />
             </Card.Body>
           </Card>

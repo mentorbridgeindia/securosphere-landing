@@ -8,11 +8,11 @@ import { ReactComponent as SecurityIcon } from "../assets/security.svg";
 
 export const Benefits = () => {
   return (
-    <Container className="py-5">
+    <Container id="usecase" className="py-5">
       <Row className="align-items-start">
         <Col
           md={6}
-          className="d-flex flex-column justify-content-center align-items-start text-center sticky "
+          className="d-flex flex-column justify-content-center align-items-start text-center sticky"
           style={{ position: "sticky", top: "100px" }}
         >
           <div className="d-flex flex-column gap-3 text-center align-items-start justify-content-center">
@@ -27,14 +27,14 @@ export const Benefits = () => {
                 ✨ Benefits
               </Badge>
             </div>
-            <h1 className="fw-bold lh-md align-left">
+            <h1 className="fw-bold lh-md  align-left ">
               Unlock a New Era of Operational Excellence and Innovation
             </h1>
             <p className="text-muted text-start lh-lg lead">
               Unlock operational excellence and innovation with our advanced
               tools and streamlined processes.
             </p>
-            <div className="d-flex flex-wrap justify-content-center gap-2 mt-3">
+            <div className="d-flex flex-wrap justify-content-center gap-2 my-3">
               <Badge
                 bg="light"
                 text="dark"
@@ -75,8 +75,8 @@ export const Benefits = () => {
         </Col>
         <Col md={6}>
           <ul className="list-unstyled benefits-list">
-            <li className="mb-5 d-flex gap-5 align-items-center">
-              <div className="side-line ms-2">
+            <li className="mb-5 d-flex gap-5 align-items-center flex-md-row flex-column">
+              <div className="side-line ms-2 mb-3 mb-md-0">
                 <div className="glow"></div>
                 <div className="shade"></div>
               </div>
@@ -93,8 +93,8 @@ export const Benefits = () => {
                 </p>
               </div>
             </li>
-            <li className="mb-5 d-flex gap-5 align-items-center">
-              <div className="side-line ms-2">
+            <li className="mb-5 d-flex gap-5 align-items-center flex-md-row flex-column">
+              <div className="side-line ms-2 mb-3 mb-md-0">
                 <div className="glow"></div>
                 <div className="shade"></div>
               </div>
@@ -111,8 +111,8 @@ export const Benefits = () => {
                 </p>
               </div>
             </li>
-            <li className="mb-5 d-flex gap-5 align-items-center">
-              <div className="side-line ms-2">
+            <li className="mb-5 d-flex gap-5 align-items-center flex-md-row flex-column">
+              <div className="side-line ms-2 mb-3 mb-md-0">
                 <div className="glow"></div>
                 <div className="shade"></div>
               </div>
@@ -129,8 +129,8 @@ export const Benefits = () => {
                 </p>
               </div>
             </li>
-            <li className="mb-5 d-flex gap-5 align-items-center">
-              <div className="side-line ms-2">
+            <li className="mb-5 d-flex gap-5 align-items-center flex-md-row flex-column">
+              <div className="side-line ms-2 mb-3 mb-md-0">
                 <div className="glow"></div>
                 <div className="shade"></div>
               </div>
@@ -147,8 +147,8 @@ export const Benefits = () => {
                 </p>
               </div>
             </li>
-            <li className="mb-5 d-flex gap-5 align-items-center">
-              <div className="side-line ms-2">
+            <li className="mb-5 d-flex gap-5 align-items-center flex-md-row flex-column">
+              <div className="side-line ms-2 mb-3 mb-md-0">
                 <div className="glow"></div>
                 <div className="shade"></div>
               </div>
@@ -165,8 +165,8 @@ export const Benefits = () => {
                 </p>
               </div>
             </li>
-            <li className="mb-5 d-flex gap-5 align-items-center">
-              <div className="side-line ms-2">
+            <li className="mb-5 d-flex gap-5 align-items-center flex-md-row flex-column">
+              <div className="side-line ms-2 mb-3 mb-md-0">
                 <div className="glow"></div>
                 <div className="shade"></div>
               </div>

@@ -1,11 +1,15 @@
 import { Badge, Col, Container, Row } from "react-bootstrap";
+import signinImg from "../assets/Signin.jpg";
+import signupImg from "../assets/Signup.jpg";
+import otp from "../assets/otp.png";
+import auth from "../assets/Auth.jpg";
 
 export const Components = () => {
   return (
     <div>
       <Container className="py-5 mt-5 features-container">
         <Row className="mt-5">
-          <Col>
+          <Col md={6} xs={12}>
             <Badge
               pill
               bg="light"
@@ -60,32 +64,32 @@ export const Components = () => {
             <div className="d-flex justify-content-center gap-2 mt-5">
               <div>
                 <img
-                  src="https://clerk.com/_next/static/media/sign-in@2xrl.72e3ee2a.webp"
+                  src={signinImg}
                   className="img-fluid rounded-2 shadow-lg"
                   alt="sign-in"
                 />
               </div>
               <div>
                 <img
-                  src="https://clerk.com/_next/static/media/sign-up@2xrl.0b502c97.webp"
+                  src={signupImg}
                   className="img-fluid rounded-2 shadow-lg"
                   alt="sign-up"
                 />
               </div>
             </div>
           </Col>
-          <Col>
+          <Col md={6} xs={12}>
             <div className="d-flex justify-content-center flex-column gap-2 mt-5 align-items-center">
               <img
-                src="https://clerk.com/_next/static/media/profile@2xrl.04d4e021.webp"
+                src={auth}
                 className="img-fluid rounded-2 shadow-lg"
                 alt="account"
               />
               <img
-                src="https://clerk.com/_next/static/media/verify@2xrl.dafd13f9.webp"
+                src={otp}
                 alt="change"
-                style={{ width: "500px", height: "450px" }}
                 className="img-fluid rounded-2 shadow-lg"
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
           </Col>

@@ -1,5 +1,8 @@
 import { Badge, Card, Col, Container, Row } from "react-bootstrap";
 import { ReactComponent as Api } from "../assets/api.svg";
+import { ReactComponent as Startup } from "../assets/rocket.svg";
+import { ReactComponent as Company } from "../assets/company.svg";
+
 export const Who = () => {
   return (
     <Container className="py-5 mt-5">
@@ -32,10 +35,10 @@ export const Who = () => {
         <Col md={6}>
           <div className="d-flex flex-column gap-5 steps-container">
             <Card className="step-card">
-              <Card.Body className="p-5">
+              <Card.Body className="p-4">
                 <Card.Title className="d-flex gap-2 align-items-center">
                   <Badge bg="light" text="dark" className="ms-2 rounded-5">
-                    <Api />
+                    <Startup style={{ width: "20px", height: "20px" }} />
                   </Badge>
                   <h3>Startups</h3>
                 </Card.Title>
@@ -46,10 +49,10 @@ export const Who = () => {
               </Card.Body>
             </Card>
             <Card className="step-card">
-              <Card.Body className="p-5">
+              <Card.Body className="p-4">
                 <Card.Title className="d-flex gap-2 align-items-center">
                   <Badge bg="light" text="dark" className="ms-2 rounded-5">
-                    <Api />
+                    <Company style={{ width: "20px", height: "20px" }} />
                   </Badge>
                   <h4>Small-Medium Enterprises</h4>
                 </Card.Title>

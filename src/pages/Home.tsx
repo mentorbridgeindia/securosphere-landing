@@ -8,6 +8,8 @@ import { Components } from "../modules/Components";
 import { Who } from "../modules/Who";
 import { Footer } from "../modules/Footer";
 import { FAQ } from "../modules/FAQ";
+import Subscribe from "../modules/Subscribe";
+import ContactForm from "../modules/Contact";
 export const Home = () => {
   return (
     <>
@@ -20,6 +22,8 @@ export const Home = () => {
       <Who />
       <Steps />
       <FAQ />
+      <ContactForm />
+      <Subscribe />
       <Footer />
     </>
   );

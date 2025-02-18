@@ -7,13 +7,14 @@ import {
   Youtube,
   Github,
 } from "lucide-react";
+
 export const Footer = () => {
   return (
     <footer className="footer py-5">
       <Container>
         <Row>
-          <Col lg={8} className="mb-4">
-            <div className=" mb-3">
+          <Col lg={8}>
+            <div className="mb-3">
               <h5 className="mb-0">SecuroSphere</h5>
             </div>
             <p className="mb-0">
@@ -35,17 +36,32 @@ export const Footer = () => {
               >
                 <Twitter width={24} height={24} />
               </a>
-              <a href="#" target="_blank" className="me-3 social-link">
+              <a
+                href="https://www.facebook.com/profile.php?id=61572485515869"
+                target="_blank"
+                className="me-3 social-link"
+              >
                 <Facebook width={24} height={24} />
               </a>
               <a
                 href="https://www.instagram.com/securosphereindia/"
                 target="_blank"
-                className="me-3 social-link"
+                className="me-3 social-link instagram"
               >
                 <Instagram width={24} height={24} />
               </a>
-              <a href="#" target="_blank" className="social-link">
+              <a
+                href="https://www.youtube.com/channel/UCE4dIaHV5yt1ypnMqMLO24Q"
+                target="_blank"
+                className="me-3 social-link youtube"
+              >
+                <Youtube width={24} height={24} />
+              </a>
+              <a
+                href="https://github.com/mentorbridgeindia/securosphere"
+                target="_blank"
+                className="social-link github"
+              >
                 <Github width={24} height={24} />
               </a>
             </div>
@@ -81,9 +97,10 @@ export const Footer = () => {
         </Row>
         <hr className="my-4" />
         <Row>
-          <Col md={12} className="text-center ">
+          <Col md={12} className="text-center">
             <p className="mb-0">
-              &copy; 2025 SecuroSphere. All rights reserved.
+              &copy; {new Date().getFullYear()} SecuroSphere. All rights
+              reserved.
             </p>
           </Col>
         </Row>

@@ -12,30 +12,31 @@ export const FAQ = () => {
             </p>
           </Col>
         </Row>
-        <Accordion >
+        <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>How do I sign up?</Accordion.Header>
+            <Accordion.Header>
+              How to retrieve user details for my organization?
+            </Accordion.Header>
             <Accordion.Body>
-              Register in just a few minutes and kickstart your integration
-              journey.
+              Either by decoding JWT or through Open API call to our
+              application.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>How do I configure my settings?</Accordion.Header>
+            <Accordion.Header>
+              How to enable login & register for my organization?
+            </Accordion.Header>
             <Accordion.Body>
-              Configure your Organization settings & authentication methods.
+              Redirect users to our subdomain dedicatedly created for your
+              organization or call our open API to sign up or sign in.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
-            <Accordion.Header>How do I redirect users?</Accordion.Header>
+            <Accordion.Header>What is the pricing plan?</Accordion.Header>
             <Accordion.Body>
-              Redirect your users to the login page of SecuroSphere.
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header>How do I decode the JWT token?</Accordion.Header>
-            <Accordion.Body>
-              Decode the JWT token and retrieve the user details.
+              We plan to keep SecuroSphere free for Start-ups and small/Medium
+              Enterprises. For large enterprises, we are working on a pro plan,
+              which will be rolled out in the future.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

@@ -12,14 +12,6 @@ const HeroSection = () => {
     >
       <Row className="w-100">
         <Col xs={12} md={12} lg={8} xl={6} className="mx-auto">
-          {/* <Badge
-            pill
-            bg="light"
-            text="dark"
-            className="mb-3 px-3 py-2 shadow-sm"
-          >
-            ✨ Smart AI Features
-          </Badge> */}
           <h1 className="display-4 fw-bold text-dark text-center mt-5 mb-3">
             Protect your web applications <br /> with the elegance of a ninja
           </h1>

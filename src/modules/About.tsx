@@ -8,8 +8,9 @@ import Sivasankari from "../assets/siva.jpg";
 import Jeyaraman from "../assets/jeyaraman.jpg";
 import Kajalakshmi from "../assets/kaja.jpg";
 import Jeyashree from "../assets/jeyashree.jpg";
-import Robin from "../assets/naga.jpg";
+import Robin from "../assets/robin.jpg";
 import Prasanna from "../assets/prasanna.jpg";
+import Karpagam from "../assets/Karpagam.jpg";
 import Senthil from "../assets/senthil.jpeg";
 import Dhileepan from "../assets/dhileepan.jpeg";
 
@@ -18,55 +19,78 @@ const teamMembers = [
     name: "Senthil Kumar ",
     role: "Analyst",
     image: Senthil,
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    linkedin: "https://www.linkedin.com/in/senthilk979/",
+    github: "https://www.linkedin.com/in/senthilk979/",
   },
   {
     name: "Dhileepan ",
     role: "Analyst",
     image: Dhileepan,
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    linkedin: "https://www.linkedin.com/in/dhileepan-dhanapal-31901224/",
+    github: "https://www.linkedin.com/in/dhileepan-dhanapal-31901224/",
   },
   {
     name: "Prasanna P",
     role: "Analyst",
     image: Prasanna,
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    linkedin: "https://www.linkedin.com/in/p-prasanna-817b9027b/",
+    github: "https://www.linkedin.com/in/p-prasanna-817b9027b/",
   },
   {
     name: "Sivasankari",
     role: "Backend Lead",
     image: Sivasankari,
-    linkedin: "https://www.linkedin.com/in/janesmith",
+    linkedin: "https://www.linkedin.com/in/sivasankari-k-3643b8266",
+    github: "https://github.com/sivasankari-kannan",
   },
   {
     name: "Jeyaraman",
     role: "Frontend Lead",
     image: Jeyaraman,
-    linkedin: "https://www.linkedin.com/in/sophialee",
+    linkedin: "https://www.linkedin.com/in/jeyaraman23/",
+    github: "https://github.com/Jagan6923",
   },
   {
     name: "Nagapriya",
     role: "Backend",
     image: Nagapriya,
-    linkedin: "https://www.linkedin.com/in/alexjohnson",
+    linkedin: "https://www.linkedin.com/in/nagapriya-sivablan",
+    github: "https://github.com/Nagapriya10",
   },
   {
     name: "Kajalakshmi",
     role: "Frontend",
     image: Kajalakshmi,
-    linkedin: "https://www.linkedin.com/in/michaelbrown",
+    linkedin: "https://www.linkedin.com/in/kajalakshmi-m/",
+    github: "https://github.com/Kajalakshmi11",
   },
   {
     name: "Jeyashree",
     role: "Frontend",
     image: Jeyashree,
-    linkedin: "https://www.linkedin.com/in/emilywilson",
+    linkedin: "http://www.linkedin.com/in/jeya-shree-s",
+    github: "https://github.com/JEYASHREESELVAN",
   },
   {
     name: "Robin",
     role: "Backend ",
     image: Robin,
-    linkedin: "https://www.linkedin.com/in/danielmartinez",
+    linkedin: "https://www.linkedin.com/in/robin-jj/",
+    github: "https://www.linkedin.com/in/robin-jj/",
+  },
+  {
+    name: "Robin",
+    role: "Backend ",
+    image: Robin,
+    linkedin: "https://www.linkedin.com/in/robin-jj/",
+    github: "https://www.linkedin.com/in/robin-jj/",
+  },
+  {
+    name: "Karpagam",
+    role: "Frontend ",
+    image: Karpagam,
+    linkedin: "http://www.linkedin.com/in/karpagam-ms",
+    github: "https://github.com/karpagamm",
   },
 ];
 
@@ -135,7 +159,7 @@ const AboutSection = () => {
                         />
                       </a>
                       <a
-                        href="https://github.com/securosphere"
+                        href={member.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-link "

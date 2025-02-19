@@ -15,8 +15,13 @@ export const Components = () => {
               bg="light"
               text="dark"
               className="mb-3 px-3 py-2 shadow-sm"
+              style={{
+                width: "fit-content",
+                background:
+                  "linear-gradient(135deg,rgb(205, 225, 244) 0%,rgb(95, 167, 244) 100%)",
+              }}
             >
-              ✨ Screens
+               Screens
             </Badge>
             <h1 className="text-center mt-3 mb-5">Ready-to-Use Screens</h1>
             <p className="lead text-muted text-center mt-3 mb-3">

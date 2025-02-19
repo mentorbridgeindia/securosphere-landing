@@ -3,7 +3,7 @@ import { Container, Row, Col, Accordion } from "react-bootstrap";
 export const FAQ = () => {
   return (
     <section className="faq-section py-5">
-      <Container>
+      <Container >
         <Row className="align-items-center">
           <Col className="text-center">
             <h2 className="mb-4">Frequently Asked Questions</h2>

@@ -57,13 +57,6 @@ export const Footer = () => {
               >
                 <Youtube width={24} height={24} />
               </a>
-              <a
-                href="https://github.com/mentorbridgeindia/securosphere"
-                target="_blank"
-                className="social-link github"
-              >
-                <Github width={24} height={24} />
-              </a>
             </div>
           </Col>
           <Col lg={2} md={6} className="mb-4">

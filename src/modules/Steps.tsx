@@ -44,7 +44,7 @@ const steps: Step[] = [
 
 export const Steps = () => {
   return (
-    <Container className="py-5 steps-container">
+    <Container id="start" className="py-5 steps-container">
       <div className="d-flex justify-content-center">
         <Badge
           pill

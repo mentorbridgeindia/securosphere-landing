@@ -16,87 +16,80 @@ import Dhileepan from "../assets/dhileepan.jpeg";
 
 const teamMembers = [
   {
-    name: "Senthil Kumar ",
+    name: "Senthil Kumar",
     role: "Analyst",
     image: Senthil,
-    linkedin: "https://www.linkedin.com/in/senthilk979/",
-    github: "https://www.linkedin.com/in/senthilk979/",
+    linkedin: "https://www.linkedin.com/in/senthilk979/ ",
+    github: "https://www.linkedin.com/in/senthilk979/ ",
   },
   {
-    name: "Dhileepan ",
+    name: "Dhileepan",
     role: "Analyst",
     image: Dhileepan,
-    linkedin: "https://www.linkedin.com/in/dhileepan-dhanapal-31901224/",
-    github: "https://www.linkedin.com/in/dhileepan-dhanapal-31901224/",
+    linkedin: "https://www.linkedin.com/in/dhileepan-dhanapal-31901224/ ",
+    github: "https://www.linkedin.com/in/dhileepan-dhanapal-31901224/ ",
   },
   {
     name: "Prasanna P",
     role: "Analyst",
     image: Prasanna,
-    linkedin: "https://www.linkedin.com/in/p-prasanna-817b9027b/",
-    github: "https://www.linkedin.com/in/p-prasanna-817b9027b/",
+    linkedin: "https://www.linkedin.com/in/p-prasanna-817b9027b/ ",
+    github: "https://www.linkedin.com/in/p-prasanna-817b9027b/ ",
   },
   {
     name: "Sivasankari",
     role: "Backend Lead",
     image: Sivasankari,
-    linkedin: "https://www.linkedin.com/in/sivasankari-k-3643b8266",
-    github: "https://github.com/sivasankari-kannan",
+    linkedin: "https://www.linkedin.com/in/sivasankari-k-3643b8266/ ",
+    github: "https://github.com/sivasankari-kannan ",
   },
   {
     name: "Jeyaraman",
     role: "Frontend Lead",
     image: Jeyaraman,
-    linkedin: "https://www.linkedin.com/in/jeyaraman23/",
-    github: "https://github.com/Jagan6923",
+    linkedin: "https://www.linkedin.com/in/jeyaraman23/ ",
+    github: "https://github.com/Jagan6923 ",
   },
   {
     name: "Nagapriya",
     role: "Backend",
     image: Nagapriya,
-    linkedin: "https://www.linkedin.com/in/nagapriya-sivablan",
-    github: "https://github.com/Nagapriya10",
+    linkedin: "https://www.linkedin.com/in/nagapriya-sivablan/ ",
+    github: "https://github.com/Nagapriya10 ",
   },
   {
     name: "Kajalakshmi",
     role: "Frontend",
     image: Kajalakshmi,
-    linkedin: "https://www.linkedin.com/in/kajalakshmi-m/",
-    github: "https://github.com/Kajalakshmi11",
+    linkedin: "https://www.linkedin.com/in/kajalakshmi-m/ ",
+    github: "https://github.com/Kajalakshmi11 ",
   },
   {
     name: "Jeyashree",
     role: "Frontend",
     image: Jeyashree,
-    linkedin: "http://www.linkedin.com/in/jeya-shree-s",
-    github: "https://github.com/JEYASHREESELVAN",
+    linkedin: "http://www.linkedin.com/in/jeya-shree-s/ ",
+    github: "https://github.com/JEYASHREESELVAN ",
   },
   {
     name: "Robin",
-    role: "Backend ",
+    role: "Backend",
     image: Robin,
-    linkedin: "https://www.linkedin.com/in/robin-jj/",
-    github: "https://www.linkedin.com/in/robin-jj/",
-  },
-  {
-    name: "Robin",
-    role: "Backend ",
-    image: Robin,
-    linkedin: "https://www.linkedin.com/in/robin-jj/",
-    github: "https://www.linkedin.com/in/robin-jj/",
+    linkedin: "https://www.linkedin.com/in/robin-jj/ ",
+    github: "https://github.com/robinjj ",
   },
   {
     name: "Karpagam",
-    role: "Frontend ",
+    role: "Frontend",
     image: Karpagam,
-    linkedin: "http://www.linkedin.com/in/karpagam-ms",
-    github: "https://github.com/karpagamm",
+    linkedin: "http://www.linkedin.com/in/karpagam-ms/ ",
+    github: "https://github.com/karpagamm ",
   },
 ];
 
 const AboutSection = () => {
   return (
-    <section className="about-section py-5  mt-5">
+    <section id="about" className="about-section py-5 mt-5">
       <Container>
         <Row className="text-center mb-5">
           <Col>
@@ -124,11 +117,7 @@ const AboutSection = () => {
         </Row>
 
         <div className="team-scroll-container">
-          <motion.div
-            className="team-scroll-wrapper"
-            drag="x"
-            dragConstraints={{ left: -900, right: 0 }}
-          >
+          <div className="team-scroll-wrapper">
             {teamMembers.map((member, index) => (
               <motion.div key={index} className="team-card">
                 <Card className="text-center border-0 shadow-sm p-3 rounded">
@@ -145,12 +134,15 @@ const AboutSection = () => {
                   <Card.Body>
                     <Card.Title className="fw-bold">{member.name}</Card.Title>
                     <Card.Text className="text-muted">{member.role}</Card.Text>
-                    <div className="d-flex justify-content-center gap-3">
+                    <div
+                      onClick={(e) => e.stopPropagation()}
+                      className="d-flex justify-content-center gap-3"
+                    >
                       <a
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="social-link "
+                        className="social-link"
                       >
                         <Linkedin
                           width={20}
@@ -162,7 +154,7 @@ const AboutSection = () => {
                         href={member.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="social-link "
+                        className="social-link"
                       >
                         <Github
                           width={20}
@@ -175,7 +167,7 @@ const AboutSection = () => {
                 </Card>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </Container>
     </section>

@@ -416,3 +416,21 @@ h1 {
     font-size: 0.8rem;
   }
 }
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, rgb(205, 225, 244) 0%, rgb(95, 167, 244) 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, rgb(205, 225, 244) 0%, rgb(95, 167, 244) 100%);
+}

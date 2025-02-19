@@ -11,7 +11,13 @@ const Subscribe = () => {
           pill
           bg="light"
           text="dark"
-          style={{ width: "fit-content" }}
+          style={{
+            width: "fit-content",
+            background: "linear-gradient(135deg,rgb(205, 225, 244) 0%,rgb(95, 167, 244) 100%)",
+            color: "white",
+            padding: "0.5rem 1rem",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+          }}
           className="mb-3 px-3 py-2 shadow-sm"
         >
           Elevate Your Business

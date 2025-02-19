@@ -50,10 +50,14 @@ export const Steps = () => {
           pill
           bg="light"
           text="dark"
-          style={{ width: "fit-content" }}
+          style={{
+            width: "fit-content",
+            background:
+              "linear-gradient(135deg,rgb(205, 225, 244) 0%,rgb(95, 167, 244) 100%)",
+          }}
           className="mb-3 px-3 py-2 shadow-sm"
         >
-          ✨ How to Start?
+           How to Start?
         </Badge>
       </div>
       <h1 className="text-center mt-3 mb-4">Simple Steps to Get Started</h1>

@@ -10,6 +10,7 @@ import { Footer } from "../modules/Footer";
 import { FAQ } from "../modules/FAQ";
 import Subscribe from "../modules/Subscribe";
 import ContactForm from "../modules/Contact";
+import AboutSection from "../modules/About";
 export const Home = () => {
   return (
     <>
@@ -22,6 +23,7 @@ export const Home = () => {
       <Who />
       <Steps />
       <FAQ />
+      <AboutSection />
       <ContactForm />
       <Subscribe />
       <Footer />

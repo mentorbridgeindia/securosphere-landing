@@ -390,8 +390,16 @@ h1 {
 }
 
 .social-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
 }
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
 
 .footer-link {
   font-size: 0.9rem;

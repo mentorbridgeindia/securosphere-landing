@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
 
 import Nagapriya from "../assets/naga.jpg";
-import Sivasankari from "../assets/siva.jpg";
+import Sivasankari from "../assets/siva1.jpg";
 import Jeyaraman from "../assets/jeyaraman.jpg";
 import Kajalakshmi from "../assets/kaja.jpg";
 import Jeyashree from "../assets/jeyashree.jpg";
@@ -33,7 +33,7 @@ const teamMembers = [
     name: "Prasanna P",
     role: "Analyst",
     image: Prasanna,
-    linkedin: "https://www.linkedin.com/in/p-prasanna-817b9027b/ ",
+    linkedin: "https://github.com/Prasanna0709 ",
     github: "https://www.linkedin.com/in/p-prasanna-817b9027b/ ",
   },
   {
@@ -51,13 +51,6 @@ const teamMembers = [
     github: "https://github.com/Jagan6923 ",
   },
   {
-    name: "Nagapriya",
-    role: "Backend",
-    image: Nagapriya,
-    linkedin: "https://www.linkedin.com/in/nagapriya-sivablan/ ",
-    github: "https://github.com/Nagapriya10 ",
-  },
-  {
     name: "Kajalakshmi",
     role: "Frontend",
     image: Kajalakshmi,
@@ -70,6 +63,13 @@ const teamMembers = [
     image: Jeyashree,
     linkedin: "http://www.linkedin.com/in/jeya-shree-s/ ",
     github: "https://github.com/JEYASHREESELVAN ",
+  },
+  {
+    name: "Nagapriya",
+    role: "Backend",
+    image: Nagapriya,
+    linkedin: "https://www.linkedin.com/in/nagapriya-sivablan/ ",
+    github: "https://github.com/Nagapriya10 ",
   },
   {
     name: "Robin",

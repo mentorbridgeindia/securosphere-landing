@@ -19,8 +19,8 @@ const contactInfo: ContactInfo = {
 const ContactForm = () => {
   return (
     <div>
-      <Container id="contact" className="py-4 py-lg-5">
-        <Row className="justify-content-center">
+      <Container id="contact" className="py-4 py-lg-5 ">
+        <Row className="justify-content-center ">
           <Col xs={12} md={11} lg={10} xl={9}>
             <Row className="shadow-lg bg-white rounded-4 mx-2 mx-md-0">
               <Col md={6} className="bg-light rounded-4 p-4 p-lg-5">

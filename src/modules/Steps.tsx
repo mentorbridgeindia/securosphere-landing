@@ -67,7 +67,7 @@ export const Steps = () => {
       <Row className="mt-4">
         {steps.map((step, index) => (
           <Col xs={12} sm={6} md={3} key={index} className="mb-4">
-            <Card className="step-card">
+            <Card className="step-cards">
               <Card.Body>
                 <div className="">
                   <div className="d-flex align-items-center justify-content-between my-4">

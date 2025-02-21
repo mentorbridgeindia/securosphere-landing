@@ -1,12 +1,7 @@
 import { Container, Row, Col, Nav } from "react-bootstrap";
-import {
-  Linkedin,
-  Twitter,
-  Facebook,
-  Instagram,
-  Youtube,
-  Github,
-} from "lucide-react";
+import { Linkedin, Facebook, Instagram, Youtube, Github } from "lucide-react";
+
+import X from "../assets/x.svg";
 
 export const Footer = () => {
   return (
@@ -21,7 +16,7 @@ export const Footer = () => {
               Advanced security solutions for modern enterprises. Protecting
               your digital assets with cutting-edge technology.
             </p>
-            <div className="social-links mt-4">
+            <div className="social-links my-4">
               <a
                 href="https://www.linkedin.com/in/securosphere/"
                 target="_blank"
@@ -34,7 +29,7 @@ export const Footer = () => {
                 target="_blank"
                 className="me-3 social-link"
               >
-                <Twitter width={24} height={24} />
+                <img src={X} width={20} height={20} alt="X" />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61572485515869"

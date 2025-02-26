@@ -16,20 +16,6 @@ import Dhileepan from "../assets/dhileepan.jpeg";
 
 const teamMembers = [
   {
-    name: "Senthil Kumar",
-    role: "Analyst",
-    image: Senthil,
-    linkedin: "https://www.linkedin.com/in/senthilk979/ ",
-    github: "https://www.linkedin.com/in/senthilk979/ ",
-  },
-  {
-    name: "Dhileepan",
-    role: "Analyst",
-    image: Dhileepan,
-    linkedin: "https://www.linkedin.com/in/dhileepan-dhanapal-31901224/ ",
-    github: "https://www.linkedin.com/in/dhileepan-dhanapal-31901224/ ",
-  },
-  {
     name: "Prasanna P",
     role: "Analyst",
     image: Prasanna,
@@ -120,7 +106,7 @@ const AboutSection = () => {
           <div className="team-scroll-wrapper">
             {teamMembers.map((member, index) => (
               <motion.div key={index} className="team-card">
-                <Card className="text-center border-0 shadow-sm p-3 rounded">
+                <Card className="text-center border-0 shadow-sm p-3 rounded ">
                   <Card.Img
                     variant="top"
                     src={member.image}

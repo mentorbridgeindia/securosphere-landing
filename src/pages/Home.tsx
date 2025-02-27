@@ -11,6 +11,7 @@ import { FAQ } from "../modules/FAQ";
 import Subscribe from "../modules/Subscribe";
 import ContactForm from "../modules/Contact";
 import AboutSection from "../modules/About";
+import Guide from "../modules/Guide";
 export const Home = () => {
   return (
     <>
@@ -22,6 +23,7 @@ export const Home = () => {
       <Benefits />
       <Who />
       <Steps />
+      <Guide />
       <FAQ />
       <AboutSection />
       <ContactForm />

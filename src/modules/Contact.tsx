@@ -3,6 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import { Form, Button, FormControl } from "react-bootstrap";
 import { ReactComponent as Phone } from "../assets/phone.svg";
 import { ReactComponent as Website } from "../assets/website.svg";
+import { ReactComponent as Locations } from "../assets/location.svg";
 import axios from "axios";
 
 interface ContactInfo {
@@ -12,16 +13,16 @@ interface ContactInfo {
 }
 
 const contactInfo: ContactInfo = {
-  address: "Dindigul – Palani Highway, Dindigul -624 002",
-  phone: "+1 234 567 890",
-  email: "customer@active.com",
+  address: "Dindigul - 624 002",
+  phone: "+91 91760 08807",
+  email: "customer@securosphere.com",
 };
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    phoneNumber: "", 
+    phoneNumber: "",
     email: "",
     message: "",
   });
@@ -66,18 +67,17 @@ const ContactForm = () => {
                 </p>
               </div>
 
-              <div className="text-center mb-4">
-                <h3 className="mb-2 fs-4">Head Office</h3>
-                <p className="text-muted small">{contactInfo.address}</p>
-              </div>
-
               <div className="d-flex flex-column align-items-center gap-3">
                 <h4 className="d-flex align-items-center gap-2 fs-5">
-                  <Phone style={{ width: "20px", height: "20px" }} />{" "}
+                  <Locations style={{ width: "20px", height: "20px" }} />
+                  {contactInfo.address}
+                </h4>
+                <h4 className="d-flex align-items-center gap-2 fs-5">
+                  <Phone style={{ width: "20px", height: "20px" }} />
                   {contactInfo.phone}
                 </h4>
                 <h4 className="d-flex align-items-center gap-2 fs-5">
-                  <Website style={{ width: "20px", height: "20px" }} />{" "}
+                  <Website style={{ width: "20px", height: "20px" }} />
                   {contactInfo.email}
                 </h4>
               </div>

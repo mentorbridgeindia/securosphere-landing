@@ -93,11 +93,19 @@ const AboutSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              We are a team of students who collaborated on the SecuroSphere
-              project, leveraging advanced AI-driven solutions to enhance web
-              application security. Our mission is to develop innovative
-              cybersecurity measures that ensure a safe and reliable online
-              presence.
+              We are a passionate team of tech enthusiasts who collaborated on
+              the SecuroSphere product, leveraging advanced AI-driven solutions
+              to enhance web application security. Our mission is to develop
+              innovative cybersecurity measures that ensure a safe and reliable
+              online presence. With a strong foundation in full-stack
+              development and cybersecurity, we strive to create cutting-edge
+              solutions that protect businesses from evolving digital threats.
+              Our approach integrates multi-layered security protocols,
+              AI-powered threat detection, and seamless authentication
+              mechanisms to safeguard sensitive data and user privacy. At
+              SecuroSphere, we are committed to pushing the boundaries of
+              cybersecurity, empowering organizations with the tools they need
+              to stay secure in an increasingly complex digital landscape.
             </motion.p>
           </Col>
         </Row>

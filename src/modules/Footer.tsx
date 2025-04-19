@@ -1,5 +1,5 @@
-import { Container, Row, Col, Nav } from "react-bootstrap";
-import { Linkedin, Facebook, Instagram, Youtube, Github } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Col, Container, Nav, Row } from "react-bootstrap";
 
 import X from "../assets/x.svg";
 
@@ -21,6 +21,7 @@ export const Footer = () => {
                 href="https://www.linkedin.com/in/securosphere/"
                 target="_blank"
                 className="me-3 social-link"
+                rel="noreferrer"
               >
                 <Linkedin width={24} height={24} />
               </a>
@@ -28,6 +29,7 @@ export const Footer = () => {
                 href="https://x.com/SecuroSphere"
                 target="_blank"
                 className="me-3 social-link"
+                rel="noreferrer"
               >
                 <img src={X} width={20} height={20} alt="X" />
               </a>
@@ -35,6 +37,7 @@ export const Footer = () => {
                 href="https://www.facebook.com/profile.php?id=61572485515869"
                 target="_blank"
                 className="me-3 social-link"
+                rel="noreferrer"
               >
                 <Facebook width={24} height={24} />
               </a>
@@ -42,6 +45,7 @@ export const Footer = () => {
                 href="https://www.instagram.com/securosphereindia/"
                 target="_blank"
                 className="me-3 social-link instagram"
+                rel="noreferrer"
               >
                 <Instagram width={24} height={24} />
               </a>
@@ -49,6 +53,7 @@ export const Footer = () => {
                 href="https://www.youtube.com/channel/UCE4dIaHV5yt1ypnMqMLO24Q"
                 target="_blank"
                 className="me-3 social-link youtube"
+                rel="noreferrer"
               >
                 <Youtube width={24} height={24} />
               </a>
@@ -65,9 +70,6 @@ export const Footer = () => {
               </Nav.Link>
               <Nav.Link href="#solutions" className="footer-link">
                 Solutions
-              </Nav.Link>
-              <Nav.Link href="#api" className="footer-link">
-                API
               </Nav.Link>
             </Nav>
           </Col>

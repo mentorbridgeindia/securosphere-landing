@@ -1,10 +1,31 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>
-			https://www.securosphere.in/
+			https://securosphere.in/
 		</loc>
 		<lastmod>
-			2025-04-19T09:15:04+00:00
+			2025-04-19T09:38:32.016Z
 		</lastmod>
+		<changefreq>
+			weekly
+		</changefreq>
+		<priority>
+			1
+		</priority>
+	</url>
+	<url>
+		<loc>
+			https://securosphere.in/about
+		</loc>
+		<lastmod>
+			2025-04-19T09:38:32.017Z
+		</lastmod>
+		<changefreq>
+			monthly
+		</changefreq>
+		<priority>
+			0.8
+		</priority>
 	</url>
 </urlset>

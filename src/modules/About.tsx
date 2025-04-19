@@ -1,18 +1,16 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Globe, Linkedin } from "lucide-react";
 
-import Nagapriya from "../assets/naga.jpg";
-import Sivasankari from "../assets/siva1.jpg";
+import Nagapriya from "../assets/nagapriya.jpg";
+import Sivasankari from "../assets/Sivasankari.jpg";
 import Jeyaraman from "../assets/jeyaraman.jpg";
 import Kajalakshmi from "../assets/kaja.jpg";
 import Jeyashree from "../assets/jeyashree.jpg";
 import Robin from "../assets/robin.jpg";
 import Prasanna from "../assets/prasanna.jpg";
 import Karpagam from "../assets/Karpagam.jpg";
-import Senthil from "../assets/senthil.jpeg";
-import Dhileepan from "../assets/dhileepan.jpeg";
 
 const teamMembers = [
   {
@@ -21,6 +19,7 @@ const teamMembers = [
     image: Prasanna,
     linkedin: "https://github.com/Prasanna0709 ",
     github: "https://www.linkedin.com/in/p-prasanna-817b9027b/ ",
+    portfolio: "https://product-dev-center.vercel.app/prasanna",
   },
   {
     name: "Sivasankari",
@@ -28,6 +27,7 @@ const teamMembers = [
     image: Sivasankari,
     linkedin: "https://www.linkedin.com/in/sivasankari-k-3643b8266/ ",
     github: "https://github.com/sivasankari-kannan ",
+    portfolio: "https://product-dev-center.vercel.app/Sivasankari",
   },
   {
     name: "Jeyaraman",
@@ -35,13 +35,15 @@ const teamMembers = [
     image: Jeyaraman,
     linkedin: "https://www.linkedin.com/in/jeyaraman23/ ",
     github: "https://github.com/Jagan6923 ",
+    portfolio: "https://product-dev-center.vercel.app/jeyaraman",
   },
   {
     name: "Kajalakshmi",
     role: "Frontend",
     image: Kajalakshmi,
-    linkedin: "https://www.linkedin.com/in/kajalakshmi-m/ ",
+    linkedin: "https://www.linkedin.com/in/kajalakshmi/ ",
     github: "https://github.com/Kajalakshmi11 ",
+    portfolio: "https://product-dev-center.vercel.app/kajalakshmi",
   },
   {
     name: "Jeyashree",
@@ -49,6 +51,7 @@ const teamMembers = [
     image: Jeyashree,
     linkedin: "http://www.linkedin.com/in/jeya-shree-s/ ",
     github: "https://github.com/JEYASHREESELVAN ",
+    portfolio: "https://product-dev-center.vercel.app/Jeyashree",
   },
   {
     name: "Nagapriya",
@@ -56,6 +59,7 @@ const teamMembers = [
     image: Nagapriya,
     linkedin: "https://www.linkedin.com/in/nagapriya-sivablan/ ",
     github: "https://github.com/Nagapriya10 ",
+    portfolio: "https://product-dev-center.vercel.app/nagapriya",
   },
   {
     name: "Robin",
@@ -63,13 +67,15 @@ const teamMembers = [
     image: Robin,
     linkedin: "https://www.linkedin.com/in/robin-jj/ ",
     github: "https://github.com/robinjj ",
+    portfolio: "https://www.linkedin.com/in/robin-jj/ ",
   },
   {
     name: "Karpagam",
     role: "Frontend",
     image: Karpagam,
-    linkedin: "http://www.linkedin.com/in/karpagam-ms/ ",
+    linkedin: "http://www.linkedin.com/in/karpagam/ ",
     github: "https://github.com/karpagamm ",
+    portfolio: "https://product-dev-center.vercel.app/karpagam",
   },
 ];
 
@@ -151,6 +157,18 @@ const AboutSection = () => {
                         className="social-link"
                       >
                         <Github
+                          width={20}
+                          height={20}
+                          style={{ color: "black" }}
+                        />
+                      </a>
+                      <a
+                        href={member.portfolio}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social-link"
+                      >
+                        <Globe
                           width={20}
                           height={20}
                           style={{ color: "black" }}
